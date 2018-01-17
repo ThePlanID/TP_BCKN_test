@@ -1,0 +1,8 @@
+{
+    "hosting": {
+        "public": "./" ,
+        "rewrites": [ {
+            "source": "/api/importTemplate ", "function": "importTemplate "
+          } ]
+    }
+}

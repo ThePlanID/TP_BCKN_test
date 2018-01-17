@@ -1,0 +1,41 @@
+[debug] [2017-12-12T06:13:53.923Z] ----------------------------------------------------------------------
+[debug] [2017-12-12T06:13:53.933Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\usuario\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-12-12T06:13:53.935Z] CLI Version:   3.16.0
+[debug] [2017-12-12T06:13:53.935Z] Platform:      win32
+[debug] [2017-12-12T06:13:53.935Z] Node Version:  v6.11.3
+[debug] [2017-12-12T06:13:53.936Z] Time:          Tue Dec 12 2017 00:13:53 GMT-0600 (Hora estándar de Centroamérica)
+[debug] [2017-12-12T06:13:53.936Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-12T06:13:53.975Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-12T06:13:53.976Z] > authorizing via signed-in user
+[debug] [2017-12-12T06:13:53.983Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-12-12T06:13:53.984Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/NBK_e0U5wyuiIM72900jnO3LW1DBKNBM0dzlBTyXsCU',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Dec 12 2017 00:13:53 GMT-0600 (Hora estándar de Centroamérica)
+[debug] [2017-12-12T06:13:54.375Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-12T06:13:54.431Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/theplanid-895f3  
+  
+ Tue Dec 12 2017 00:13:54 GMT-0600 (Hora estándar de Centroamérica)
+[debug] [2017-12-12T06:13:55.105Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-12T06:13:55.107Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/theplanid-895f3/tokens  
+  
+ Tue Dec 12 2017 00:13:55 GMT-0600 (Hora estándar de Centroamérica)
+[debug] [2017-12-12T06:13:55.658Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\usuario\Desktop\Andres\Repos\test'...
+[info] 
+[debug] [2017-12-12T06:13:55.669Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/theplanid-895f3  
+  
+ Tue Dec 12 2017 00:13:55 GMT-0600 (Hora estándar de Centroamérica)
+[debug] [2017-12-12T06:13:56.128Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-12T06:13:56.130Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/405991042272/clients/_:getWebAppConfig  
+  
+ Tue Dec 12 2017 00:13:56 GMT-0600 (Hora estándar de Centroamérica)
+[debug] [2017-12-12T06:13:56.677Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] +  hosting: Local server: http://localhost:5000
+

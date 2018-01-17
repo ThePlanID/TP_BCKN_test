@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TestApp</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+          <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="Friendly Chat">
+        <meta name="theme-color" content="#303F9F">
+
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-title" content="Friendly Chat">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+
+        <!-- Tile icon for Win8 -->
+        <meta name="msapplication-TileColor" content="#3372DF">
+        <meta name="msapplication-navbutton-color" content="#303F9F">
+
+        <!-- Material Design Lite -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+        <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- App Styling -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    </head>
+    <body>
+        
+        <header>
+            <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
+                <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+                <h3><i class="material-icons">chat_bubble_outline</i> Test App</h3>
+                </div>
+                <div id="user-container">
+                    <button hidden id="sign-out" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--red">
+                        Sign-out
+                    </button>
+                    <button hidden id="send-request" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--red">
+                            Send-Request
+                        </button>
+                    <button hidden id="sign-in" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--red">
+                        <i class="material-icons">account_circle</i>Sign-in with Google
+                    </button>
+                </div>
+            </div>
+        </header>
+
+    <script src="/__/firebase/4.2.0/firebase-app.js"></script>
+    <script src="/__/firebase/4.2.0/firebase-auth.js"></script>
+    <script src="/__/firebase/4.2.0/firebase-database.js"></script>
+    <script src="/__/firebase/4.2.0/firebase-messaging.js"></script>
+     
+    <!-- Leave out Storage -->
+    <!-- <script src="/__/firebase/4.2.0/firebase-storage.js"></script> -->
+    
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCieYqszAeC4jAH8oqAtxLM3cN174nlZAc",
+            authDomain: "theplanid-895f3.firebaseapp.com",
+            databaseURL: "https://theplanid-895f3.firebaseio.com",
+            projectId: "theplanid-895f3",
+            storageBucket: "theplanid-895f3.appspot.com",
+            messagingSenderId: "405991042272",
+            databaseAuthVariableOverride: {
+                uid: "uidA"
+              }
+        };
+    
+        firebase.initializeApp(config,'app_test'); 
+    </script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="scripts/main.js"></script>
+    </body>
+</html>
